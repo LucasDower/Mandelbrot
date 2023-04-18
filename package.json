@@ -1,12 +1,13 @@
 {
-  "name": "WebGLTemplate",
+  "name": "mandelbrot",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config ./src/webpack.dev.js",
-    "lint": "eslint --fix ./src/*.ts"
+    "lint": "eslint --fix ./src/*.ts",
+    "build": "webpack --config ./src/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
