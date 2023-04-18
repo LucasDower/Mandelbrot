@@ -123,6 +123,7 @@ document.addEventListener('mousemove', (e) => {
     const percentageY = deltaY / window.innerHeight;
     uniforms.u_offset.value[0] -= (window.innerWidth / window.innerHeight) * percentageX * uniforms.u_width.value;
     uniforms.u_offset.value[1] += percentageY * uniforms.u_width.value;
+    requestAnimationFrame(animate);
   }
   mouse.y = e.clientY;
   mouse.x = e.clientX;
@@ -138,11 +139,10 @@ document.addEventListener('mouseup', () => {
 
 document.addEventListener('wheel', (e) => {
   uniforms.u_width.value *= (e.deltaY > 0 ? 1.1 : 0.9);
+  requestAnimationFrame(animate);
 });
 
 function animate (): void {
-  requestAnimationFrame(animate);
-
   uniforms.u_ratio.value = window.innerWidth / window.innerHeight;
   renderer.render(scene, camera);
 }
