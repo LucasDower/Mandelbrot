@@ -1,6 +1,10 @@
+![](preview.jpg)
+
 # Mandelbrot Set Visualisation
 
-An interactive visualisation of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set)
+[**Website**](https://lucasdower.github.io/Mandelbrot/dist/)
+
+An interactive visualisation of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).
 
 * Hold-and-drag to pan the camera.
 * Scroll wheel to zoom the camera.
